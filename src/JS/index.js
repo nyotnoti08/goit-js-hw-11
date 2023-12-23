@@ -69,14 +69,14 @@ function renderGallery(hits) {
   galleryEl.insertAdjacentHTML('beforeend', markup);
 
   // Make smooth page scrolling after the request and rendering each next group of images
-  const { height: cardHeight } = document
-    .querySelector('.gallery')
-    .firstElementChild.getBoundingClientRect();
+  // const { height: cardHeight } = document
+  //   .querySelector('.gallery')
+  //   .firstElementChild.getBoundingClientRect();
 
-  window.scrollBy({
-    top: cardHeight * 2,
-    behavior: 'smooth',
-  });
+  // window.scrollBy({
+  //   top: cardHeight * 2,
+  //   behavior: 'smooth',
+  // });
 
   //   If the user has reached the end of the collection
   if (options.params.page * options.params.per_page >= totalHits) {
